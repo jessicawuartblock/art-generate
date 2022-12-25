@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js install
+
+PATH: 
+  ~/.local/bin/:/Users/zhijunzhao/.cabal/bin:/Users/zhijunzhao/.ghcup/bin:/usr/local/Cellar/php/8.0.3/sbin:/usr/local/Cellar/php/8.0.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/zhijunzhao/.cargo/bin:/usr/local/share/dotnet
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.19.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express-handlebars: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141376:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "art-blocks-starter-template",
+    "version": "0.2.1",
+    "description": "A template to simulate the Art Blocks (artblocks.io) environment.",
+    "main": "app.js",
+    "scripts": {
+      "start": "nodemon app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Asupkay/Artblocks-Starter-Template.git"
+    },
+    "author": "Alex Supkay, Stephen McArdle",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Asupkay/Artblocks-Starter-Template/issues"
+    },
+    "homepage": "https://github.com/Asupkay/Artblocks-Starter-Template#readme",
+    "dependencies": {
+      "express": "^4.17.1",
+      "express-handlebars": "^4.0.4",
+      "markdown-it": "^12.0.4"
+    },
+    "devDependencies": {
+      "eslint": "^7.3.1",
+      "eslint-config-google": "^0.14.0",
+      "eslint-config-prettier": "^6.11.0",
+      "eslint-plugin-prettier": "^3.1.4",
+      "nodemon": "^2.0.7",
+      "prettier": "^2.0.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
